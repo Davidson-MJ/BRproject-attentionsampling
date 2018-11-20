@@ -10,4 +10,4 @@ Pipeline order
 2) BRSwitch_Attention_pipeline
 3) AppendBEHtoEEG
 
-Supportfiles were designed for personal research purposes, any questions please don't hesitate to ask.
+Code and Supportfiles were designed for personal research purposes, any questions please don't hesitate to ask.
