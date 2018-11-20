@@ -15,6 +15,9 @@ job.AdjustTriggerOnsetTimes=0; %intensive- locate physical onset of tones based 
 job.EpochSwitchesinBPdata=0; %epoch all switches and plot their timecourse in BP data.
 % uses at the moment a 2second baseline subtraction, and channel POz.
 
+%launch firstswitchpipeline
+job.firstswitchpipeline_focus=0
+
 sanitycheckON=0;
 
 % set up directories.
@@ -118,4 +121,14 @@ end
 % %      EXPjob5_printabsSNRafterBPress  
 % %  end
      
- 
+
+%ALSO first switch analysis:
+if job.firstswitchpipeline_focus==1
+    createDATAfile_wrespecttoBP;
+    analyzeBehaviouralDatafile;
+    Createfor_alignmentofSwitches;
+    
+    %plot
+    %Plotfirstswitches_xmod
+
+end
